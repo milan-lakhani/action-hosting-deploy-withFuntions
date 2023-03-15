@@ -1,20 +1,6 @@
-# Copyright 2020 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-name: "Deploy to Firebase Hosting"
+name: "Deploy to Firebase Hosting with Functions"
 description: "A GitHub Action to deploy to Firebase Hosting"
-author: "Jason Miller (https://github.com/developit) and Firebase"
+author: "Edited by Milan Lakhani , Original Author : Jason Miller (https://github.com/developit) and Firebase"
 branding:
   icon: "globe"
   color: "blue"
@@ -29,7 +15,7 @@ inputs:
     description: "Firebase service account JSON"
     required: true
   expires:
-    description: "How long should a preview live? See the preview channels docs for options"
+    description: "How long should a preview live? See the preview channels docs for options. NOTE: preview option doesn't support deploying functions YET"
     default: "7d"
     required: false
   projectId:
